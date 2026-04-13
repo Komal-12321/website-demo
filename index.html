@@ -1,1 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>CloudNova | Digital Solutions</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.6);
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/web.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 55px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* Section */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: #38bdf8;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>CloudNova</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Build. Scale. Innovate.</h1>
+        <p>Modern Web & Cloud Solutions</p>
+        <button class="btn" onclick="showMessage()">Get Started</button>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>🚀 Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="images/web.jpg">
+            <h3>Web Development</h3>
+            <p>Responsive & modern websites</p>
+        </div>
+
+        <div class="card">
+            <img src="images/cloud.jpg">
+            <h3>Cloud Solutions</h3>
+            <p>AWS deployment & automation</p>
+        </div>
+
+        <div class="card">
+            <img src="images/devops.jpg">
+            <h3>DevOps</h3>
+            <p>CI/CD pipelines & Docker</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>💡 About Us</h2>
+    <p>
+        We are a digital solutions company focused on building scalable web applications,
+        cloud infrastructure, and DevOps automation.
+    </p>
+</section>
+
+<section class="section" id="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: contact@cloudnova.com</p>
+</section>
+
+<footer>
+    <p>© 2026 CloudNova. Built with ❤️ on AWS</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("Welcome! Your site is live on AWS 🚀");
+}
+</script>
+
+</body>
+</html>
